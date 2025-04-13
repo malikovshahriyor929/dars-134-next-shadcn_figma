@@ -1,0 +1,47 @@
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+export  const tags = [
+  { id: 1, component: "Accordion" },
+  { id: 2, component: "Alert" },
+  { id: 3, component: "Alert Dialog" },
+  { id: 4, component: "Aspect Ratio" },
+  { id: 5, component: "Avatar" },
+  { id: 6, component: "Badge" },
+  { id: 7, component: "Breadcrumb" },
+  { id: 8, component: "Button" },
+  { id: 9, component: "Calendar" },
+  { id: 10, component: "Card" },
+  { id: 11, component: "Carousel" },
+  { id: 12, component: "Chart" },
+  { id: 13, component: "Checkbox" },
+  { id: 14, component: "Collapsible" },
+  { id: 15, component: "Combobox" },
+  { id: 16, component: "Command" },
+  { id: 17, component: "Context Menu" },
+  { id: 18, component: "Data Table" },
+  { id: 19, component: "Date Picker" },
+  { id: 20, component: "Dialog" },
+  { id: 21, component: "Drawer" },
+  { id: 22, component: "Dropdown Menu" },
+  { id: 23, component: "Form" },
+  { id: 24, component: "Hover Card" },
+  { id: 25, component: "Input" },
+  { id: 26, component: "Input OTP" },
+  { id: 27, component: "Label" },
+  { id: 28, component: "Menubar" },
+  { id: 29, component: "Navigation Menu" },
+  { id: 30, component: "Pagination" },
+  { id: 31, component: "Popover" },
+  { id: 32, component: "Progress" },
+  { id: 33, component: "Radio Group" },
+  { id: 34, component: "Resizable" },
+  { id: 35, component: "Scroll Area" },
+  { id: 36, component: "Select" },
+  { id: 37, component: "Separator" },
+  { id: 38, component: "Sheet" },
+  { id: 39, component: "Sidebar" },
+];
