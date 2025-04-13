@@ -30,7 +30,7 @@ import {
 import Selection from "@/shared/generics/selection";
 interface Props {
   params: {
-    component?: string;
+    component: string;
   };
 }
 const DocsForComponent: React.FC<Props> = ({ params }) => {

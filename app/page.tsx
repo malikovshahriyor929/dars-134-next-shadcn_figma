@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div>
       {/* <DocsForComponent params={{ component: "Card" }} /> */}
+      Home
     </div>
   );
 };
