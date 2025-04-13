@@ -1,10 +1,7 @@
 "use client"
 import React from "react";
-import { useTheme } from "next-themes";
 
 const CodeBlock = () => {
-  const { theme } = useTheme();
-  const isDarkMode = theme === "dark";
 
   const codeString = `import {
   Card,
@@ -18,7 +15,8 @@ const CodeBlock = () => {
   const syntaxHighlighting = (code: string) => {
     const lines = code.split("\n");
     return lines.map((line, index) => {
-      const parts: (string | any)[] = [];
+    //   const parts: (string | any)[] = [];
+    const parts: React.ReactNode[] = [];
       let currentWord = "";
       for (let i = 0; i < line.length; i++) {
         const char = line[i];

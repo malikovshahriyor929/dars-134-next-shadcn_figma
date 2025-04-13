@@ -1,16 +1,17 @@
 import React from "react";
 import ThemedIcon from "../theme/themeLogo";
 import Theme from "../theme";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className="border-[rgba(228,228,231,0.5)] border-dotted  border-b ">
       <div className="w-[97%] mx-auto max-w-[1440px] border-[rgba(228,228,231,0.5)] sticky top-0 border-dotted border-x py-3 px-5 flex items-center justify-between">
         <div className="flex items-center gap-5 ">
-          <a className=" flex items-center gap-2 " href="/">
+          <Link className=" flex items-center gap-2 " href="/">
             <ThemedIcon />
             <span className="hidden font-bold lg:inline-block">shadcn/ui</span>
-          </a>
+          </Link>
           <ul className="flex items-center gap-4 ">
             <li>
               <p>Docs</p>
