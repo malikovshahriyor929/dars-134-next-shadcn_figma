@@ -33,8 +33,8 @@ interface Props {
     component: string;
   };
 }
-const DocsForComponent: React.FC<Props> = ({ params }) => {
-  const componentName = params?.component || "Card";
+const DocsForComponent: React.FC<Props> = async ({ params }) => {
+  const componentName = params.component || "Card";
 
   return (
     <div className=" flex flex-col gap-2 w-[90%]  mx-auto mt-5   ">
